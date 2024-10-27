@@ -1,0 +1,33 @@
+// Show the Create Account Form based on the button clicked
+function showAccountForm(type) {
+  const formTitle = document.getElementById("formTitle");
+  if (type === 'sell') {
+      formTitle.innerText = "Create Account to Sell";
+  } else if (type === 'purchase') {
+      formTitle.innerText = "Create Account to Purchase";
+  }
+  document.getElementById("accountForm").style.display = "flex";
+}
+
+// Hide the Create Account Form
+function closeAccountForm() {
+  document.getElementById("accountForm").style.display = "none";
+}
+
+// Get form elements
+const submitButton = document.getElementById("submitButton");
+const outputDiv = document.getElementById("output");
+
+// Add event listener to handle form submission
+submitButton.addEventListener("click", () => {
+  // Get input values
+  const username = document.getElementById("username").value;
+  const age = document.getElementById("age").value;
+  const email = document.getElementById("email").value;
+
+  // Display input values in the output div
+  outputDiv.innerHTML = `<p>Username: ${username}</p><p>Age: ${age}</p><p>Email: ${email}</p>`;
+
+  // Close form after submission
+  closeAccountForm();
+});
