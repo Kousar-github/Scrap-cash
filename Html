@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scrap Deal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!--Home Section-->
+
+    <div class="logo">
+      <img class="logo_image"src="images/logo.png" alt="">
+    </div>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about_us">About Us</a></li>
+        <li><a href="#how_we_work">How we works</a></li>
+        <li><a href="#join_us_vendor">Join Us Vender</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="background_image">
+      <h1>Anything, anytime at <br> your doorstep</h1>
+      <p>Little effort will have a great impact reduce reuse recycle</p>
+      <button class="request" type="button" name="button">Request pickup</button>
+    </div>
+
+    <!--About Us Section-->
+
+    <div id="about_us">
+      <img class="about_image" src="images/about_us.png">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>We intend to help out busy people to collect their recyclables <br> by offering free pickup service. We work as a ‘Recyclable <br> Material Collector’ by offering doorstep collection service for <br> individual houses, societies, organizations and industries. <br> Initially we started our services by collecting the old <br> newspapers, milk packets and plastic bottles by raising <br> awareness about the importance of recycling.</p>
+      </div>
+    </div>
+
+    <!--How We Work Section-->
+
+    <div id="how_we_work">
+      <h1>How we work</h1>
+      <p>Scrapdeal is a service which helps you to sell your oldand throw away stuff in an organized manner. It is as <br> easy as calling or dropping us a note you get rid of your stuff just like that!</p>
+    </div>
+    <div class="how_we_work_logo">
+      <img class="chat" src="images/chat.png">
+      <div class="chat_text">
+        <h2>Your Request</h2>
+        <p>Drop in your name and <br> contact </p>
+      </div>
+      <img class="delivery" src="images/delivery.png">
+      <div class="delivery_text">
+        <h2>We collect</h2>
+        <p>One of us comes and collect <br> stuff you want to sell </p>
+      </div>
+      <img class="payment" src="images/payment.png">
+      <div class="payment_text">
+        <h2>Take your cash</h2>
+        <p>Get paid in hard cash or in your <br> Phonepay wallet if you like </p>
+      </div>
+    </div>
+
+<!--Join Us Vendors-->
+
+    <div id="join_us_vendor">
+      <img class="vendors" src="images/vendors.png" alt="">
+    </div>
+    <div class="details">
+      <h1>Join Us Vendor</h1>
+      <hr>
+      <br>
+      <form>
+        <div class="details_1">
+          <label>Your Name</label> <br> <br>
+          <input type="text" placeholder="Enter Your Name" value=""><br><br>
+          <label>Mobile</label><br><br>
+          <input type="text" placeholder="Enter Your Mobile" value=""><br><br>
+          <label>City </label><br><br>
+          <input type="text" placeholder="Select City" value="">
+        </div>
+
+        <div class="details_2">
+          <label for="">Your Email</label><br><br>
+          <input type="text" placeholder="Enter Your Email" value=""><br><br>
+          <label for="">Organization Name</label><br><br>
+          <input type="text" placeholder="Enter Organization Name" value=""><br><br>
+          <label for="">State</label><br><br>
+          <input type="text" placeholder="Select State" value="">
+        </div>
+        <div class="details_3">
+          <label for="">Describe yourself</label><br><br>
+          <input type="text" placeholder="Write here" value="">
+        </div>
+        <button class="submit" type="button" name="button">Submit</button>
+      </form>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>      {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /*Home Section*/
+  
+  #menu {
+    position: fixed;
+    left: 210px;
+    top: 0;
+    width: 1139px;
+    height: 80px;
+    background-color: #FFFFFF;
+  }
+  
+  ul {
+    line-height: 80px;
+    margin-left: 50px;
+  }
+  
+  ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  ul li a{
+  font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #6C7074;
+    padding: 0 20px;
+    display: block;
+  }
+  
+  ul li a:hover {
+    color: #4C8747;
+  }
+  
+  .background_image {
+    position: absolute;
+    top: 80px;
+    left: 0;
+  height: 577px;
+  width: 1349px;
+  background-image: url(images/home_background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  }
+  
+  .logo_image {
+    width: 170px;
+    height: 30px;
+   position: fixed;
+   top: 25px;
+   left: 30px;
+  }
+  
+  .background_image h1 {
+    color: #FFFFFF;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .background_image p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 50px;
+    top: 360px;
+    opacity: 73%;
+  }
+  
+  .request {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    background-color: #2eb82e;
+    border-color: #4c8747;
+    color: #ffffff;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: bold;
+  
+  }
+  /*About Us Section*/
+  
+  #about_us {
+    width: 1349px;
+    height: 657PX;
+    background-color: #FBFFF1;
+    position: absolute;
+    top: 657px;
+  }
+  
+  #about_us h1 {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+  
+  #about_us p {
+    color: #000000; 
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    line-height: 25px;
+}
+  
+  .about_image {
+    width: 450px;
+    height: 580px;
+    position: absolute;
+    left: 750px;
+    top: 50px;
+  }
+  
+  .container {
+    width: 550px;
+    height:300px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    background-color: #46d246;
+    border-radius: 30px;
+    box-shadow: Gray 4px 4px 2px;
+  }
+  
+  /*How we work Section*/
+  
+  #how_we_work {
+    width: 1349px;
+    height: 200px;
+    background-color:#f5f8f5;
+    position: absolute;
+    top: 1314px;
+  }
+  #how_we_work h1 {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+  }
+  
+  #how_we_work p {
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .chat {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+  }
+  
+  .delivery {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 599px;
+  }
+  
+  .payment {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    right: 200px;
+  }
+  
+  .chat_text {
+    background-color: red;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+  }
+  .how_we_work_logo {
+    width: 1349px;
+    height: 457px;
+    background-color:#f5f8f5;
+    position: absolute;
+    top: 1514px;
+  }
+  
+  
+  .chat_text {
+    width: 250px;
+    height: 150px;
+    background-color: #f5f8f5;
+    position: absolute;
+    top: 180px;
+    left: 150px;
+  }
+  
+  .delivery_text {
+    width: 250px;
+    height: 150px;
+    background-color: #f5f8f5;
+    position: absolute;
+    top: 180px;
+    left: 549px;
+  }
+  
+  .payment_text {
+    width: 250px;
+    height: 150px;
+    background-color: #f5f8f5;
+    position: absolute;
+    top: 180px;
+    right: 150px;
+  }
+  
+  .chat_text h2 {
+      font-family: 'Roboto', sans-serif;
+        text-align: center;
+        position: relative;
+        top: 20px;
+        color: #545454;
+  }
+  
+  .chat_text p {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        position: relative;
+        top: 40px;
+        color: #827B7B
+  }
+  
+  .delivery_text h2 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        position: relative;
+        top: 20px;
+        color: #545454;
+  }
+  
+  .delivery_text p {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      position: relative;
+      top: 40px;
+      color: #827B7B
+  }
+  
+  .payment_text h2 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        position: relative;
+        top: 20px;
+        color: #545454;
+  }
+  
+  .payment_text p {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        position: relative;
+        top: 40px;
+        color: #827B7B
+  }
+  
+  /*Join Us Vendors Section*/
+  
+  #join_us_vendor {
+    width: 650px;
+    height: 657px;
+    background-color: yellow;
+    position: absolute;
+    top: 1971px;
+  }
+  
+  .vendors {
+    width: 650px;
+    height: 657px;
+  }
+  .details {
+    width: 699px;
+    height: 657px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 650px;
+    top: 1971px;
+  }
+  
+  .details h1 {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-family: 'Roboto', sans-serif;
+    }
+  
+  hr {
+    width: 600px;
+    margin-left: 30px;
+    margin-top: 80px;
+  }
+  
+  .details_1 {
+    width: 280px;
+    height: 350px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+  }
+  
+  .details_2 {
+    width: 280px;
+    height: 350px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 120px;
+    left: 350px;
+  }
+  
+  .details_3 {
+    width: 600px;
+    height: 120px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 450px;
+    left: 30px;
+  }
+  
+  
+  .details_1 input {
+    width: 250px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: #F3F3F3;
+    border-color: #D6D6D6;
+    border-width: 1px;
+    border-radius: 3px;
+  }
+  
+  .details_1 label {
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+  }
+  
+  .details_2 input {
+    width: 250px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: #F3F3F3;
+    border-color: #D6D6D6;
+    border-width: 1px;
+    border-radius: 3px;
+  }
+  
+  .details_2 label {
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+  }
+  
+  .details_3 input {
+    width: 570px;
+    height: 80px;
+    margin-left: 30px;
+    background-color: #F3F3F3;
+    border-color: #D6D6D6;
+    border-width: 1px;
+    border-radius: 3px;
+  }
+  
+  .details_3 label {
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+  }
+  
+  .submit {
+      width: 100px;
+      height: 40px;
+      position: absolute;
+      top: 590px;
+      left: 530px;
+      background-color: #2eb82e;
+      border-color: #4c8747;
+      color: #ffffff;
+      border-radius: 5px;
+      border-width: 1px;
+      font-weight: bold;
+  }      give me java script code for this every button
